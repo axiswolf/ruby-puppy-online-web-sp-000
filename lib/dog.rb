@@ -4,9 +4,9 @@ class Dog
     @name = name
     @@all << self
   end
-  def all
+  def all(@@all)
     #iterates over all of the individual dogs stored in @@all array and 'puts' out their name to terminal
-    @@all.each do |name|
+    all.each do |name|
       puts "#{name}"
     end
   end
